@@ -1,12 +1,11 @@
-name: 'Dynamic Badges'
-description: 'Creates badge descriptions to be used with shields.io/endpoint and uploads them to a gist.'
-branding:
-  icon: 'tag'
-  color: 'green'
+# action.yml
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  TEST:
-    description: 'The *.json filename of the badge data'
+  TEST:  # id of input
+    description: 'Who to greet'
     required: true
+    default: 'World'
 runs:
   using: 'docker'
   image: 'Dockerfile'
