@@ -1,0 +1,12 @@
+name: 'Dynamic Badges'
+description: 'Creates badge descriptions to be used with shields.io/endpoint and uploads them to a gist.'
+branding:
+  icon: 'tag'
+  color: 'green'
+inputs:
+  TEST:
+    description: 'The *.json filename of the badge data'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
