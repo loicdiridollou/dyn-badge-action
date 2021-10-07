@@ -14,6 +14,8 @@ inputs:
     default: 35
   secret:
     required: True
+  filename:
+    default: 'coverage.json'
 runs:
   using: 'docker'
   image: 'Dockerfile'
