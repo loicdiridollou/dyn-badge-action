@@ -2,10 +2,18 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
-  TEST:  # id of input
+  message:  # id of input
     description: 'Who to greet'
     required: true
-    default: 'World'
+    default: 'Code coverage'
+  gist_id:
+    default: '9a9cd8f729d7d20be9d383d11ccbf3df'
+  color:
+    default: 'red'
+  value:
+    default: 35
+  secret:
+    required: True
 runs:
   using: 'docker'
   image: 'Dockerfile'
