@@ -16,6 +16,8 @@ inputs:
     required: True
   filename:
     default: 'coverage.json'
+  user:
+    required: True
 runs:
   using: 'docker'
   image: 'Dockerfile'
