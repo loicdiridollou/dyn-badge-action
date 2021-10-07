@@ -1,9 +1,11 @@
 import os
 import requests
 
-url = 'https://api.github.com/gists/{}'.format(os.environ.get('INPUT_gist_id')  )
+url = 'https://api.github.com/gists/{}'.format(os.environ.get('INPUT_gist_id'))
 message, color, value = os.environ.get('INPUT_message'), os.environ.get('INPUT_color'), os.environ.get('INPUT_value')
 string_json = '{"schemaVersion": 1, "label": "%s", "message": "%s", "color": "%s"}' % (message, value, color)
+
+print(url, message, color, value, string_json)
 
 myobj = {"public": False, "files": {"coverage.json": {"content": string_json}}}
 
