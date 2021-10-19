@@ -1,13 +1,14 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Action for dynamic badges'
+description: 'Create dynamic badge to be displayed in the README.md file'
 inputs:
-  message:  # id of input
-    description: 'Who to greet'
+  message: 
+    description: 'Message of the badge'
     required: true
     default: 'Code coverage'
   gist_id:
-    default: '9a9cd8f729d7d20be9d383d11ccbf3df'
+    required: true
+    default: ''
   color:
     default: 'red'
   value:
